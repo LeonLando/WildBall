@@ -6,6 +6,7 @@ public class CubeController : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody rb;
+    
     void Start()
     {
         anim = GetComponent<Animator>();

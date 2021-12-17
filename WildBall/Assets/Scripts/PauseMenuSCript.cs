@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuSCript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private GameObject LevelsPanel;
+    private GameObject MainMenu;
     void Start()
     {
         
