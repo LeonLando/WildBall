@@ -7,6 +7,10 @@ TagManager:
   - Teleport
   - LevelPanel
   - MainMenuPanel
+  - DieObj
+  - Door
+  - Coin
+  - Ground
   layers:
   - Default
   - TransparentFX
