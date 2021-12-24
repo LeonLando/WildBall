@@ -30,7 +30,7 @@ namespace WildBall.Inputs
             float Horizontal = Input.GetAxis(GlobalStringVars.Horizontal_Axis);
             float Vertical = Input.GetAxis(GlobalStringVars.Vertical_Axis);
             Movement = new Vector3(Horizontal, 0, Vertical).normalized;
-            if (Input.GetKeyDown(KeyCode.Space) && IsGrounded)
+            if (Input.GetKeyDown(KeyCode.Space) && IsGrounded)  //
             {
                 IsGrounded = false;
                 GetComponent<Rigidbody>().AddForce(new Vector3(0, JumpPower, 0));
@@ -62,6 +62,7 @@ namespace WildBall.Inputs
             if (other.CompareTag("DieObj"))
             {
                 PlayerRender.enabled = false;
+                GetComponent<Rigidbody>().isKinematic = true;
                 PartycleObj.SetActive(true);
                 StartCoroutine(ReloadScene());
             }
